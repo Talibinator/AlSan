@@ -1,0 +1,293 @@
+h1{
+    text-align: center;
+    padding: 25px;
+}
+
+/*contact*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.contact{
+    position: relative;
+    min-height: 10vh;
+    padding: 52px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 32px;
+    font-weight: 200;
+    color: #424040;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: #302e2e;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #494848;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #292727;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    coLor: #666;
+
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #505050;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+body {
+    align-items: center;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
+.container1 .textbereich input{
+    position: absolute;
+    font-size: 2.2em;
+    padding: auto;
+    line-height: 80px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid;
+    width: 40%;
+}
+
+.labelline {
+    text-align: center;
+    font-size: 40px;
+}
+
+.container1{
+    margin-top: 14px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: yellow;
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: yellow;
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+}
+
+.navbar li{
+    color: yellow;
+}
+
+
+.containermain{
+    width: auto;
+    background-image: url(bild.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.collapsible {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.collapsible input{
+    display: none;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: white;
+    box-shadow: 0 5px 11px 0 black;
+    color: blue;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after{
+     content: "";
+     position: absolute;
+     right: 15px;
+     top: 15px;
+     width: 18px;
+     height: 18px;
+     background: url(chevron-right-solid.svg)  no-repeat 0 0;
+     transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: white;
+    box-shadow: 0 5px 11px 0 black;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text h2{
+
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: blue;
+}
+
+.collapsible-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.collapsible:hover h2{
+    color: rgb(182, 40, 40);
+}
+
